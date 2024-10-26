@@ -1,0 +1,117 @@
+/* About section start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --themeRed :#e43a47;
+    --gray : #efefef;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid var(--themeRed);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sectionTitle::after{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themeRed);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%,50%);
+    border: 3px solid white ;
+}
+
+section{
+    padding: 100px 0;
+    position: relative;
+}
+
+#aboutSection .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px
+}
+
+#aboutSection .cards > div{
+    width: 350px;
+    background-color: var(--gray);
+    padding: 35px;
+    color: #4444;
+    text-align: center;
+    border-radius: 15px;
+    height: 215px;
+    border: 1px solid black;
+    transition: 0.4s
+}
+
+/* #aboutSection .cards > div :hover{
+    width: 400px;
+    margin-top: -20px;
+    padding: 40px;
+    background-color: var(--themeRed);
+    color: white;
+    padding: 55px;
+    height: auto;
+} */
+
+#aboutSection .cards  div .title{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.title:hover{
+    font-size: 20px;
+    color: var(--themeRed);
+    transition: 0.3s;
+}
+
+#aboutSection .cards > div p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+#aboutSection .cards > div:hover p{
+    color:var(--themeRed)
+}
+
+#aboutSection .cards > div button {
+    border: 1px solid var(--themeRed);
+    outline:none;
+    padding: 7px 10px;
+    margin-top:15px;
+    font-size: 15px;
+    border-radius: 3px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+#aboutSection .cards > div:hover button{
+    background-color: var(--themeRed);
+    color: blue;
+    background-color: black;
+    padding: 5px 15px;
+}
+
+.programs{
+    background-color: gainsboro
+}
